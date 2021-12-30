@@ -1,0 +1,28 @@
+{
+  "name": "@hashiprobr/react-native-paper-datetimepicker",
+  "version": "1.0.0",
+  "description": "TODO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hashiprobr/react-native-paper-datetimepicker.git"
+  },
+  "keywords": [
+    "TODO"
+  ],
+  "author": "Marcelo Hashimoto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hashiprobr/react-native-paper-datetimepicker/issues"
+  },
+  "homepage": "https://github.com/hashiprobr/react-native-paper-datetimepicker#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-native": "^0.66.4",
+    "react-native-modal-datetime-picker": "^13.0.0",
+    "react-native-paper": "^4.11.1"
+  }
+}
