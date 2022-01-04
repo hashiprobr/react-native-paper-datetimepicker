@@ -7,7 +7,7 @@ import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import { TouchableRipple, TextInput } from 'react-native-paper';
 
 export default function MobileDateTimePicker(props) {
-    const [open, setOpen] = useState(false);
+    const [visible, setVisible] = useState(false);
 
     function toString(date) {
         if (props.type === 'time') {
@@ -19,18 +19,18 @@ export default function MobileDateTimePicker(props) {
 
     function onPress() {
         if (props.editable !== false) {
-            setOpen(true);
+            setVisible(true);
         }
     }
 
     function onCancel() {
-        setOpen(false);
+        setVisible(false);
     }
 
     function onConfirm(date) {
         onCancel();
         if (date.getFullYear() > 999) {
-            props.setValue(date);
+            props.onChangeDate(date);
         }
     }
 
@@ -40,6 +40,15 @@ export default function MobileDateTimePicker(props) {
     return (
         <>
             <TouchableRipple
+                onFocus={props.onFocus}
+                onBlur={props.onBlur}
+                borderless={props.borderless}
+                background={props.background}
+                centered={props.centered}
+                disabled={props.disabled}
+                onPress={onPress}
+                rippleColor={props.rippleColor}
+                underlayColor={props.underlayColor}
                 style={{
                     ...touchableStyle,
                     flexDirection: 'column',
@@ -58,18 +67,10 @@ export default function MobileDateTimePicker(props) {
                     paddingLeft: 0,
                     overflow: 'visible',
                 }}
-                onFocus={props.onFocus}
-                onBlur={props.onBlur}
-                borderless={props.borderless}
-                background={props.background}
-                centered={props.centered}
-                disabled={props.disabled}
-                onPress={onPress}
-                rippleColor={props.rippleColor}
-                underlayColor={props.underlayColor}
                 theme={props.theme}
             >
                 <View
+                    pointerEvents="none"
                     style={{
                         flexGrow: 1,
                         flexDirection: touchableStyle.flexDirection,
@@ -83,19 +84,9 @@ export default function MobileDateTimePicker(props) {
                         paddingLeft: touchableStyle.paddingLeft,
                         overflow: touchableStyle.overflow,
                     }}
-                    pointerEvents="none"
                 >
                     <TextInput
-                        {...props}
-                        style={{
-                            ...props.style,
-                            margin: 0,
-                            marginTop: 0,
-                            marginRight: 0,
-                            marginBottom: 0,
-                            marginLeft: 0,
-                        }}
-                        left={null}
+                        mode={props.mode}
                         right={(
                             <TextInput.Icon
                                 disabled={props.disabled}
@@ -103,12 +94,26 @@ export default function MobileDateTimePicker(props) {
                                 theme={props.theme}
                             />
                         )}
-                        onChangeText={null}
+                        disabled={props.disabled}
+                        label={props.label}
+                        error={props.error}
+                        selectionColor={props.selectionColor}
+                        underlineColor={props.underlineColor}
+                        activeUnderlineColor={props.activeUnderlineColor}
+                        outlineColor={props.outlineColor}
+                        activeOutlineColor={props.activeOutlineColor}
+                        dense={props.dense}
                         multiline={false}
                         numberOfLines={1}
-                        onFocus={null}
-                        onBlur={null}
                         value={toString(props.value)}
+                        style={{
+                            ...style,
+                            margin: 0,
+                            marginTop: 0,
+                            marginRight: 0,
+                            marginBottom: 0,
+                            marginLeft: 0,
+                        }}
                         theme={props.theme}
                         editable={false}
                     />
@@ -116,7 +121,7 @@ export default function MobileDateTimePicker(props) {
             </TouchableRipple>
             <DateTimePickerModal
                 date={props.value}
-                isVisible={open}
+                isVisible={visible}
                 mode={props.type === 'time' ? 'time' : 'date'}
                 onCancel={onCancel}
                 onChange={props.onChange}
