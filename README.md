@@ -1,2 +1,2 @@
-React Native Paper DateTimePicker
+react-native-paper-datetimepicker
 =================================

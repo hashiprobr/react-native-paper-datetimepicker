@@ -2,27 +2,35 @@
   "name": "@hashiprobr/react-native-paper-datetimepicker",
   "version": "1.0.0",
   "description": "TODO",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "keywords": [
+    "JavaScript",
+    "React",
+    "React Native",
+    "React Native Paper",
+    "React Native Paper Component",
+    "DateTimePicker",
+    "Material Design"
+  ],
+  "homepage": "https://github.com/hashiprobr/react-native-paper-datetimepicker#readme",
+  "bugs": {
+    "url": "https://github.com/hashiprobr/react-native-paper-datetimepicker/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hashiprobr/react-native-paper-datetimepicker.git"
   },
-  "keywords": [
-    "TODO"
-  ],
-  "author": "Marcelo Hashimoto",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hashiprobr/react-native-paper-datetimepicker/issues"
+  "author": "Marcelo Hashimoto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/hashiprobr/react-native-paper-datetimepicker#readme",
   "dependencies": {
-    "react": "^17.0.2",
-    "react-native": "^0.66.4",
-    "react-native-modal-datetime-picker": "^13.0.0",
-    "react-native-paper": "^4.11.1"
+    "react-native-modal-datetime-picker": "^13.0.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0",
+    "react-native": "^0.65.0",
+    "react-native-paper": "^4.11.0"
   }
 }
