@@ -13,10 +13,10 @@ react-native-paper-datetimepicker
   and [my own fork of
   it](https://github.com/hashiprobr/react-native-paper-dropdown).
 
-* In the web, the component is a [date
+* In the web, the DateTimePicker component is a [date
   input](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input/date)
-  or (time
-  input)[https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input/time]
+  or [time
+  input](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input/time)
   wrapped by a TextInput. The value can either be typed or chosen from a popup.
 
   ![](img/date.gif)
