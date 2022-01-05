@@ -51,6 +51,8 @@ export default function MobileDateTimePicker(props) {
                 underlayColor={props.underlayColor}
                 style={{
                     ...touchableStyle,
+                    flexGrow: style.flexGrow,
+                    alignSelf: style.alignSelf,
                     flexDirection: 'column',
                     flexWrap: 'nowrap',
                     justifyContent: 'flex-start',
@@ -73,16 +75,6 @@ export default function MobileDateTimePicker(props) {
                     pointerEvents="none"
                     style={{
                         flexGrow: 1,
-                        flexDirection: touchableStyle.flexDirection,
-                        flexWrap: touchableStyle.flexWrap,
-                        justifyContent: touchableStyle.justifyContent,
-                        alignItems: touchableStyle.alignItems,
-                        padding: touchableStyle.padding,
-                        paddingTop: touchableStyle.paddingTop,
-                        paddingRight: touchableStyle.paddingRight,
-                        paddingBottom: touchableStyle.paddingBottom,
-                        paddingLeft: touchableStyle.paddingLeft,
-                        overflow: touchableStyle.overflow,
                     }}
                 >
                     <TextInput
@@ -111,6 +103,8 @@ export default function MobileDateTimePicker(props) {
                         value={toString(props.value)}
                         style={{
                             ...style,
+                            flexGrow: 1,
+                            alignSelf: 'stretch',
                             margin: 0,
                             marginTop: 0,
                             marginRight: 0,
