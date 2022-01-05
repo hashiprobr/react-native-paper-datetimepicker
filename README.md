@@ -108,7 +108,7 @@ import { Provider } from 'react-native-paper';
 
 import { DateTimePicker } from '@hashiprobr/react-native-paper-datetimepicker';
 
-export default function Main() {
+export default function MyComponent() {
     const [date, setDate] = useState(new Date());
 
     return (
