@@ -135,13 +135,11 @@ export default function WebDateTimePicker(props) {
                 } else {
                     // https://github.com/callstack/react-native-paper/blob/main/src/components/TextInput/helpers.tsx#L43
                     if (style.height) {
-                        // https://github.com/callstack/react-native-paper/blob/main/src/components/TextInput/TextInputFlat.tsx#L244
-                        inputStyle.height = style.height + 0;
+                        inputStyle.height = style.height;
                     } else {
                         // https://github.com/callstack/react-native-paper/blob/main/src/components/TextInput/TextInputFlat.tsx#L186
-                        // https://github.com/callstack/react-native-paper/blob/main/src/components/TextInput/TextInputFlat.tsx#L244
                         // https://github.com/callstack/react-native-paper/blob/main/src/components/TextInput/TextInputFlat.tsx#L44
-                        inputStyle.height = (props.dense ? (props.label ? 52 : 40) - 24 : 64 - 30) + (props.dense ? 24 : 30);
+                        inputStyle.height = (props.dense ? (props.label ? 52 : 40) - 24 : 64 - 30);
                     }
                     // https://github.com/callstack/react-native-paper/blob/main/src/components/TextInput/helpers.tsx#L164
                     if (props.label) {
@@ -172,9 +170,10 @@ export default function WebDateTimePicker(props) {
                     />
                 );
             }}
+            value=" "
             style={style}
             theme={props.theme}
-            editable={false}
+            editable={props.editable !== false}
         />
     );
 }
