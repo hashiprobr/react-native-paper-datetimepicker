@@ -74,7 +74,7 @@ Props
 | disabled             | equivalent to the [TouchableRipple disabled prop](https://callstack.github.io/react-native-paper/touchable-ripple.html#disabled) and the [TextInput disabled prop](https://callstack.github.io/react-native-paper/text-input.html#disabled) |
 | onFocus              | equivalent to the [TouchableRipple onFocus prop](https://callstack.github.io/react-native-paper/touchable-ripple.html#onFocus) |
 | onBlur               | equivalent to the [TouchableRipple onBlur prop](https://callstack.github.io/react-native-paper/touchable-ripple.html#onBlur) |
-| style                | all properties except margins are applied to the inner TextInput, margins are applied to the outer TouchableRipple |
+| style                | all properties except flexGrow, alignSelf, and margins are applied to the inner TextInput; flexGrow, alignSelf, and margins are applied to the outer TouchableRipple |
 | theme                | equivalent to the [TouchableRipple theme prop](https://callstack.github.io/react-native-paper/touchable-ripple.html#theme) and the [TextInput theme prop](https://callstack.github.io/react-native-paper/text-input.html#theme) |
 | editable             | if false, clicking on the component has no effect (default `true`) |
 | borderless           | equivalent to the [TouchableRipple borderless prop](https://callstack.github.io/react-native-paper/touchable-ripple.html#) |
@@ -82,7 +82,7 @@ Props
 | centered             | equivalent to the [TouchableRipple centered prop](https://callstack.github.io/react-native-paper/touchable-ripple.html#centered) |
 | rippleColor          | equivalent to the [TouchableRipple rippleColor prop](https://callstack.github.io/react-native-paper/touchable-ripple.html#rippleColor) |
 | underlayColor        | equivalent to the [TouchableRipple underlayColor prop](https://callstack.github.io/react-native-paper/touchable-ripple.html#underlayColor) |
-| touchableStyle       | all properties except margins are applied to the outer TouchableRipple |
+| touchableStyle       | all properties except flexGrow, alignSelf, and margins are applied to the outer TouchableRipple |
 | mode                 | equivalent to the [TextInput mode prop](https://callstack.github.io/react-native-paper/text-input.html#mode) |
 | label                | equivalent to the [TextInput label prop](https://callstack.github.io/react-native-paper/text-input.html#label) |
 | error                | equivalent to the [TextInput error prop](https://callstack.github.io/react-native-paper/text-input.html#error) |
