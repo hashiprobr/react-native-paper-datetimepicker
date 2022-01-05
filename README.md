@@ -17,7 +17,7 @@ react-native-paper-datetimepicker
   input](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input/date)
   or [time
   input](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input/time)
-  wrapped by a TextInput. The value can either be typed or chosen from a popup.
+  wrapped by a TextInput. The value can be either typed or chosen from a popup.
 
   ![](img/date.gif)
   ![](img/time.gif)
@@ -94,3 +94,33 @@ Props
 | dense                | equivalent to the [TextInput dense prop](https://callstack.github.io/react-native-paper/text-input.html#dense) |
 | iconColor            | equivalent to the [TextInput.Icon color prop](https://callstack.github.io/react-native-paper/text-input-icon.html#color) |
 | iconStyle            | equivalent to the [TextInput.Icon style prop](https://callstack.github.io/react-native-paper/text-input-icon.html#style) |
+
+
+Example
+-------
+
+``` js
+import React, { useState } from 'react';
+
+import { View } from 'react-native';
+
+import { Provider } from 'react-native-paper';
+
+import { DateTimePicker } from '@hashiprobr/react-native-paper-datetimepicker';
+
+export default function Main() {
+    const [date, setDate] = useState(new Date());
+
+    return (
+        <Provider>
+            <View>
+                <DateTimePicker
+                    type="date"
+                    value={date}
+                    onChangeDate={setDate}
+                />
+            </View>
+        </Provider>
+    );
+}
+```
