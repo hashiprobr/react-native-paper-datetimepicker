@@ -127,9 +127,9 @@ export default function MobileDateTimePicker(props) {
                 isVisible={visible}
                 mode={props.type === 'time' ? 'time' : 'date'}
                 onCancel={onCancel}
-                onChange={props.onChange}
+                onChange={() => { }}
                 onConfirm={onConfirm}
-                onHide={props.onHide}
+                onHide={() => { }}
             />
         </>
     );
