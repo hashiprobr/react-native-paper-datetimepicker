@@ -7,17 +7,17 @@ react-native-paper-datetimepicker
   wrapped by a TouchableRipple. When the touchable is clicked, the component
   uses [Matteo Mazzarolo](https://github.com/mmazzarolo)'s
   [react-native-modal-datetime-picker](https://github.com/mmazzarolo/react-native-modal-datetime-picker)
-  to change the input value.
-
-  The code was heavily inspired by [Fateh
+  to change the input value. The code was heavily inspired by [Fateh
   Farooqui](https://github.com/fateh999)'s
   [react-native-paper-dropdown](https://fateh999.github.io/react-native-paper-dropdown/#/)
   and [my own fork of
   it](https://github.com/hashiprobr/react-native-paper-dropdown).
 
-* In the web, the DateTimePicker component is an `input[type="date"]` or
-  `input[type="time"]` wrapped by a TextInput. The value can either be typed or
-  chosen from a popup.
+* In the web, the component is an [<input
+  type="date">](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input/date)
+  or (<input
+  type="time">)[https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input/time]
+  wrapped by a TextInput. The value can either be typed or chosen from a popup.
 
   ![](img/date.gif)
   ![](img/time.gif)
@@ -69,8 +69,8 @@ Props
 | name                 | description |
 |----------------------|-------------|
 | type                 | `'date'` or `'time'` (default `'date'`) |
-| value                | the current date |
-| onChangeDate         | called when the date has changed |
+| value                | the current date (**required**) |
+| onChangeDate         | called when the date has changed (**required**) |
 | disabled             | equivalent to the [TouchableRipple disabled prop](https://callstack.github.io/react-native-paper/touchable-ripple.html#disabled) and the [TextInput disabled prop](https://callstack.github.io/react-native-paper/text-input.html#disabled) |
 | onFocus              | equivalent to the [TouchableRipple onFocus prop](https://callstack.github.io/react-native-paper/touchable-ripple.html#onFocus) |
 | onBlur               | equivalent to the [TouchableRipple onBlur prop](https://callstack.github.io/react-native-paper/touchable-ripple.html#onBlur) |
