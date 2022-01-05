@@ -29,13 +29,13 @@ Install
 With npm:
 
 ```
-npm install @react-native-community/datetimepicker @hashiprobr/react-native-paper-datetimepicker
+npm install @react-native-community/datetimepicker react-native-modal-datetime-picker @hashiprobr/react-native-paper-datetimepicker
 ```
 
 With yarn:
 
 ```
-yarn add @react-native-community/datetimepicker @hashiprobr/react-native-paper-datetimepicker
+yarn add @react-native-community/datetimepicker react-native-modal-datetime-picker @hashiprobr/react-native-paper-datetimepicker
 ```
 
 If using Expo, add the module to `webpack.config.js`:
