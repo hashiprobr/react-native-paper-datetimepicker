@@ -1,6 +1,6 @@
 {
   "name": "@hashiprobr/react-native-paper-datetimepicker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "TODO",
   "keywords": [
     "JavaScript",
@@ -30,7 +30,7 @@
   },
   "peerDependencies": {
     "react": "^17.0.0",
-    "react-native": "^0.65.0",
+    "react-native": ">=0.64.0",
     "react-native-paper": "^4.11.0"
   }
 }

@@ -34,8 +34,8 @@ export default function MobileDateTimePicker(props) {
         }
     }
 
-    const touchableStyle = { ...props.touchableStyle };
     const style = { ...props.style };
+    const touchableStyle = { ...props.touchableStyle };
 
     return (
         <>
@@ -91,6 +91,9 @@ export default function MobileDateTimePicker(props) {
                             <TextInput.Icon
                                 disabled={props.disabled}
                                 name={props.type === 'time' ? 'clock-outline' : 'calendar'}
+                                forceTextInputFocus={false}
+                                color={props.iconColor}
+                                style={props.iconStyle}
                                 theme={props.theme}
                             />
                         )}
