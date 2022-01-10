@@ -28,6 +28,7 @@ Peer dependencies
 
 ``` json
 {
+    "@react-native-community/datetimepicker": "^5.1.0",
     "react": "^17.0.1",
     "react-native": ">=0.64.3",
     "react-native-modal-datetime-picker": "^13.0.1",
@@ -42,13 +43,13 @@ Install
 With npm:
 
 ```
-npm install @react-native-community/datetimepicker react-native-modal-datetime-picker @hashiprobr/react-native-paper-datetimepicker
+npm install @hashiprobr/react-native-paper-datetimepicker
 ```
 
 With yarn:
 
 ```
-yarn add @react-native-community/datetimepicker react-native-modal-datetime-picker @hashiprobr/react-native-paper-datetimepicker
+yarn add @hashiprobr/react-native-paper-datetimepicker
 ```
 
 If using Expo, add the module to `webpack.config.js`:

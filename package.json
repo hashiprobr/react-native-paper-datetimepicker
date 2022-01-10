@@ -1,6 +1,6 @@
 {
   "name": "@hashiprobr/react-native-paper-datetimepicker",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "A React Native Paper Component for picking date or time",
   "keywords": [
     "JavaScript",
@@ -26,6 +26,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "peerDependencies": {
+    "@react-native-community/datetimepicker": "^5.1.0",
     "react": "^17.0.1",
     "react-native": ">=0.64.3",
     "react-native-modal-datetime-picker": "^13.0.1",
