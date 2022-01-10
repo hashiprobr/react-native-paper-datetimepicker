@@ -28,7 +28,7 @@ Peer dependencies
 
 ``` json
 {
-    "@react-native-community/datetimepicker": "^5.1.0",
+    "@react-native-community/datetimepicker": "^3.5.2",
     "react": "^17.0.1",
     "react-native": ">=0.64.3",
     "react-native-modal-datetime-picker": "^13.0.1",
