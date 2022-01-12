@@ -35,7 +35,6 @@ export default function MobileDateTimePicker(props) {
     }
 
     const style = { ...props.style };
-    const touchableStyle = { ...props.touchableStyle };
 
     return (
         <>
@@ -50,7 +49,7 @@ export default function MobileDateTimePicker(props) {
                 rippleColor={props.rippleColor}
                 underlayColor={props.underlayColor}
                 style={{
-                    ...touchableStyle,
+                    ...props.touchableStyle,
                     flexGrow: style.flexGrow,
                     alignSelf: style.alignSelf,
                     flexDirection: 'column',
