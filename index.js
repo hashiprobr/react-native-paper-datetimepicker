@@ -1,4 +1,4 @@
-import DateTimeProvider from './src/DateTimeProvider';
+import DateTimeContainer from './src/DateTimeContainer';
 import DateTimePicker from './src/DateTimePicker';
 
-export { DateTimeProvider, DateTimePicker };
+export { DateTimeContainer, DateTimePicker };
