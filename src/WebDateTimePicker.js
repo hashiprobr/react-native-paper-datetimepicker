@@ -37,13 +37,13 @@ export default function WebDateTimePicker(props) {
 
     function onFocus() {
         if (ref.current) {
-            ref.current.handleFocus();
+            ref.current.focus();
         }
     }
 
     function onBlur() {
         if (ref.current) {
-            ref.current.handleBlur();
+            ref.current.blur();
         }
     }
 
