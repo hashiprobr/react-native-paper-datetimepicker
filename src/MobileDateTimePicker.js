@@ -99,7 +99,7 @@ export default function MobileDateTimePicker(props) {
                         dense={props.dense}
                         multiline={false}
                         numberOfLines={1}
-                        value={toString(props.value)}
+                        value={props.value && toString(props.value)}
                         style={{
                             ...style,
                             flexGrow: 1,

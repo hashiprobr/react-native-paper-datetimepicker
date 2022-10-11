@@ -164,7 +164,7 @@ export default function WebDateTimePicker(props) {
                         selectioncolor={props.selectionColor}
                         onFocus={onFocus}
                         onBlur={onBlur}
-                        defaultValue={toString(props.value)}
+                        defaultValue={props.value && toString(props.value)}
                         style={inputStyle}
                         readOnly={props.editable === false}
                     />
