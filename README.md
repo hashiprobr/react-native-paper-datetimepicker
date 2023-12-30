@@ -1,6 +1,8 @@
 react-native-paper-datetimepicker
 =================================
 
+[PROJECT DISCONTINUED]
+
 **A React Native Paper TextInput for picking date or time**
 
 * In Android and iOS, the DateTimePicker component is a non-editable TextInput
